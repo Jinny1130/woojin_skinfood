@@ -1,0 +1,123 @@
+.collect_section{margin-top: 120px;}
+
+
+.collection_list li{width: 100%;margin-top: 50px;}
+.collection_list li a{
+    display: block;
+}
+.collection_list li a>img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.descriptionBox{box-sizing: border-box; padding:25px;}
+.descriptionBox01{background-color:#ffedd4; color:#6f6352;}
+.descriptionBox02{background-color:#eafcf9; color:#59716d;}
+.descriptionBox03{background-color:#fef4c2; color:#65614b;}
+
+
+.descriptionBox h3{
+    font-size:25px;
+    padding:15px 0;
+    position: relative;
+}
+
+
+.descriptionBox p{
+    font-size:14px;
+    padding:15px 0;
+    line-height: 24px;
+    letter-spacing: -1px;
+}
+
+
+/* 타이틀 위아래 라인 */
+.descriptionBox01 h3::before{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color:#6f6352;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.descriptionBox01 h3::after{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color: #6f6352;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.descriptionBox02 h3::before{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color:#59716d;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.descriptionBox02 h3::after{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color: #59716d;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.descriptionBox03 h3::before{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color:#65614b;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.descriptionBox03 h3::after{
+    content:'';
+    width: 40px;
+    height: 2px;
+    background-color: #65614b;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+
+
+/* tablet & pc */
+@media all and (min-width:768px){
+    .collection_list li{float: left;
+        margin-right: 2%;
+        width: 32%;
+        box-sizing: border-box;
+
+    }
+    .collection_list li:last-child{margin-right: 0;}
+
+
+    .descriptionBox{
+        width: 85%;
+        transform: translate(-50%, -30%);
+        position: relative;
+        left: 50%;
+    }
+
+    
+
+
+}
+
+

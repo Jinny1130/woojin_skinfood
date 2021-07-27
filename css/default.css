@@ -1,0 +1,46 @@
+@font-face {
+    font-family: 'KOTRA_GOTHIC';
+    src: url('../font/KOTRA_GOTHIC.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{font-family: 'KOTRA_GOTHIC';}
+
+h1.logo+ul.gnbList{margin-bottom:0 !important;}
+
+.container{width: 90%;max-width: 1132px; margin: 0 auto;}
+
+/* 플룻해제 */
+.clearfix::after{content: ''; display: block; clear: both;}
+
+
+/* 숨김요소 */
+.blind{
+position: absolute;
+width: none;
+height: none;
+line-height: none;
+text-indent: -9999px;
+overflow: hidden;}
+
+/*  */
+.sec_title{
+    color: #ffa400;
+    font-size: 35px;
+}
+
+.divider{
+    width: 90%;margin: 70px auto;
+    max-width: 1132px;
+    background:url(../img/con1/underLine.png);
+    
+}
+
+
+@media all and (min-width:768px){
+    .sec_title{
+        color: #ffa400;
+        font-size: 45px;
+    }
+
+}

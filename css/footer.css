@@ -1,0 +1,91 @@
+.footer{
+    background:url(../img/footer/m_bg_footer.png) top/cover no-repeat;
+    margin-top: 104px;
+    width:100%; height: 700px;
+    position:relative;
+}
+.footerWrap{
+    padding-top:150px;
+}
+
+
+/* 푸터메뉴 */
+.footerMenu>li>a{display: block; color:#fff; font-size:15px;}
+.footerMenu{width:100%}
+.footerMenu>li{
+    display:inline-block;
+    margin-top:15px;
+    padding: 0 2%;
+    position:relative;
+}
+.footerMenu>li:first-child{padding-left:0;}
+.footerMenu>li:last-child{padding-right:0;}
+.footerMenu>li::before{
+    content:'';
+    width:1px; height:15px;
+    background-color:#fff;
+    position:absolute;
+    top:0; left:0;
+}
+.footerMenu>li:first-child::before{display:none;}
+
+
+/* 푸터 회사정보 */
+.footerInfo{margin:40px 0; color:#fff; font-size:15px;}
+
+.footerInfo_list>li{
+    display:inline-block;
+    margin-top:15px;
+    padding:0 3%;
+    position:relative;
+}
+.footerInfo_list>li:first-child{padding-left:0;}
+.footerInfo_list>li:last-child{padding-right:0;}
+.footerInfo_list>li::before{
+    content:'';
+    width:1px; height:15px;
+    background-color:#8e8e8e;
+    position:absolute;
+    top:0; left:0;
+}
+.footerInfo_list>li:first-child::before{display:none;}
+
+.footerAddress{margin:20px 0; font-size:15px;}
+.footerAddress p{margin:15px 0;}
+.footerAddress p span{font-weight: bold;}
+
+
+/* 아이콘리스트 */
+.snsIcon{
+    box-sizing: border-box;
+    padding-left: 155px;
+}
+.snsIcon li a img{width:40px; height:40px;}
+
+.snsIcon>li{
+    display:inline-block;
+    padding:0 5%;
+}
+.snsIcon li:last-child{padding-right:0;}
+
+
+/* 고객센터 전화번호 */
+.serviceNumber{
+    margin: 0 30px;
+    color: #fff;
+}
+.serviceNumber h2{font-size:35px; margin:15px 0;}
+.serviceNumber p:last-child{margin-top:10px;}
+
+
+
+@media all and (min-width:768px){
+    .footer{
+        background:url(../img/footer/bg_footer.png) top/cover no-repeat;
+        margin-top: 104px; height: 400px;
+    }
+
+    .left{width:70%; float:left;}
+    .right{width:30%; float:right;}
+
+}

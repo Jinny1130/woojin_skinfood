@@ -1,0 +1,104 @@
+
+.review_section{margin:120px 0 150px 0;}
+.review-swiper-container{margin-top:40px;}
+
+.reviewBox{box-sizing: border-box; padding:60px 40px;}
+.reviewBox h2{
+    padding:20px 0;
+    font-size:25px;
+    letter-spacing: -0.1px;
+    line-height: 1.3;
+    position:relative;
+}
+.reviewBox p{font-size:15px;}
+
+.reviewBox01{background-color:#ffedd4;}
+.reviewBox01 h2{color:#6f6352; }
+.reviewBox01 p{color:#6f6352;}
+
+.reviewBox02{background-color:#ffe4c5;}
+.reviewBox02 h2{color:#6d5b53;}
+.reviewBox02 p{color:#6d5b53;}
+
+/* 타이틀 위아래 줄 */
+.reviewBox01 h2::before{
+    content:'';
+    width: 60px;
+    height: 2px;
+    background-color: #6f6352;
+    position: absolute;
+    top:0;
+}
+.reviewBox01 h2::after{
+    content:'';
+    width:60px;
+    height: 2px;
+    background-color:#6f6352;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+.reviewBox02 h2::before{
+    content:'';
+    width: 60px;
+    height: 2px;
+    background-color: #6d5b53;
+    position: absolute;
+    top:0;
+}
+.reviewBox02 h2::after{
+    content:'';
+    width:60px;
+    height: 2px;
+    background-color:#6d5b53;
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+/* 리뷰 */
+.review{margin:40px 0; position:relative; width:100%;}
+.review p{font-size:15px; line-height:1.5;}
+.review button{
+    background:none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    margin-top:15px;
+}
+.button01{
+    border: 1px solid #6f6352;
+    color: #6f6352;
+}
+.button02{
+    border: 1px solid #6d5b53;
+    color: #6d5b53;
+}
+
+
+
+
+@media all and (min-width:768px){
+    .review-swiper-container{width:90%; max-width:1200px; margin:40px auto;}
+    .reviewBox{
+        width:590px; height: 350px;
+        position:absolute;
+        top:50%;
+        right:0;
+        transform: translate(0, -50%);
+    }
+    .review-slide div{float: left;}
+    .reviewPhoto{margin-left:30px;}
+    .reviewBox{margin-right:30px;}
+    .reviewBox h2{font-size:30px; letter-spacing: 0;}
+
+    .review p{float:left; }
+    .review button{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
+
+    .button-right,.button-left{top:200px;}
+
+
+}
